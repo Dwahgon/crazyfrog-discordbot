@@ -1,9 +1,94 @@
-CRAZYFROG_URL = "https://www.youtube.com/watch?v=PzE6ti2_Oo8"
-CRAZYFROG_IMAGES = [
+[main.logger.stdoutlogger]
+Type=stdout
+Level=DEBUG
+
+[main.logger.filelogger]
+Type=file
+Level=DEBUG
+File=out.log
+
+[client.logger.stdoutlogger]
+Type=stdout
+Level=DEBUG
+
+[client.audio_player]
+AudioFile=
+
+[client.logger.filelogger]
+Type=file
+Level=DEBUG
+File=out.log
+
+[commands.dingding]
+Name=dingding
+Description=Destezo crazy frog
+Type=simpleresponse
+Response=Destezo crazy frog
+
+[commands.lyrics]
+Name=letra
+Description=A letra de crazy frog muito foda
+Type=simpleresponse
+Response=Ring ding ding daa baa
+    Baa aramba baa bom baa barooumba
+    Wh-wha-what's going on-on?
+    Ding, ding
+    This is the Crazy Frog
+    Ding, ding
+    Bem, bem!
+    Ring ding ding ding ding ding
+    Ring ding ding ding bem bem bem
+    Ring ding ding ding ding ding
+    Ring ding ding ding baa baa
+    Ring ding ding ding ding ding
+    Ring ding ding ding bem bem bem
+    Ring ding ding ding ding ding
+    This is the Crazy Frog
+    Breakdown!
+    Ding, ding
+    Br-br-break it, br-break it
+    Dum dum dumda dum dum dum
+    Dum dum dumda dum dum dum
+    Dum dum dumda dum dum dum
+    Bem, bem!
+    Dum dum dumda dum dum dum
+    Dum dum dumda dum dum dum
+    Dum dum dumda dum dum dum
+    This is the Crazy Frog
+    A ram me ma bra ba bra bra rim bran
+    Dran drra ma mababa baabeeeaaaaaaa!
+    Ding, ding
+    This is the Crazy Frog
+    Ding, ding
+    Da, da
+    Ring ding ding ding ding ding
+    Ring ding ding ding bem bem bem
+    Ring ding ding ding ding ding
+    Ring ding ding ding baa baa
+    Ring ding ding ding ding ding
+    Ring ding ding ding bem bem bem
+    Ring ding ding ding ding ding
+    This is the Crazy Frog
+    Ding, ding
+    Br-br-break it, br-break it
+    Dum dum dumda dum dum dum
+    Dum dum dumda dum dum dum
+    Dum dum dumda dum dum dum
+    Bem, bem!
+    Dum dum dumda dum dum dum
+    Dum dum dumda dum dum dum
+    Dum dum dumda dum dum dum
+    This is the Crazy Frog
+    Bem, bem!
+
+[commands.image]
+Name=imagem
+Description=Posta uma imagem do crazy frog
+Type=randomimage
+Images=[
     "https://i.ytimg.com/vi/k85mRPqvMbE/mqdefault.jpg",
     "https://i.ytimg.com/vi/EQozbKOh6nY/hqdefault.jpg",
     "https://phoneky.co.uk/thumbs/screensavers/down/abstract/crazyfrogg_e6lfuqz6.gif",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwilJbtD314ZJSMLFVkesi0kwP9pf6rnWwrg&usqp=CAU",
     "https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/d/c/7/0/dc7011d1e16d3d500f8b5374cd0731cc.jpg",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx77KpROFNDBA3jAs2tkhvVs_-bjqRbp7_JQ&usqp=CAU",
     "https://i.ytimg.com/vi/S_IAqwrvEuU/maxresdefault.jpg",
@@ -22,12 +107,10 @@ CRAZYFROG_IMAGES = [
     "https://media.gettyimages.com/photos/crazy-frog-during-fight-for-life-fundraiser-december-12-2005-at-hard-picture-id134740624?s=612x612",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXUR2lXclE6MeTDE9Hhu8sXsdFn2hfBMVF1w&usqp=CAU",
     "https://pbs.twimg.com/profile_images/423522916/monalisa_mona-crazy-frog_2_400x400.jpg",
-    "https://pics.me.me/create-meme-chundra-chuchundra-chundra-chuchundra-crazy-frog-53748802.png",
     "https://i.kym-cdn.com/photos/images/original/000/302/654/bb0.jpg",
-    "https://i.ebayimg.com/images/g/MVUAAOxy06hSFSq5/s-l300.jpg",
     "https://cdn.discordapp.com/attachments/389094746569834509/815346365998956564/unknown.png",
-]
-CRAZYFROG_FRASES = [
+    ]
+Texts=[
     "Crazy frog fugindo da policia",
     "Crazy frog fumando maconha",
     "Crazy frog vs Rodrogas who is more fuck",
@@ -63,20 +146,4 @@ CRAZYFROG_FRASES = [
     "crazy Frog de calça",
     "5 Crazy frogs contra 8 savianos, quem ganha?",
     "Sabia que o Crazy Frog sabia assobiar?",
-]
-CRAZYFROG_MUSICAS = [
-    "https://www.youtube.com/watch?v=k85mRPqvMbE&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=0kXwW6reObk&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=P1KT_I1LmtA&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=S_IAqwrvEuU&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=TOGusJon6qw&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=S6rZtIipew8&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=10HwmvvxlEw&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=jwI1j7sslYI&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=_5SfNi71nd8&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=jLPYnw17GTY&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=ua1LGVE9lvY&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=KRbsco8M7Fc&ab_channel=CrazyFrog",
-    "https://www.youtube.com/watch?v=FSNXhmBxRKE&ab_channel=CrazyFrog",
-]
-CRAZYFROG_PREFIX = "cf:"
+    ]
