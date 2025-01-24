@@ -1,0 +1,14 @@
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Restart=on-failure
+RestartSec=1s
+User=%i
+WorkingDirectory=/home/%i/crazyfrog-discordbot/
+ExecStart=/home/%i/crazyfrog-discordbot/.venv/bin/python /home/%i/crazyfrog-discordbot/crazyfrog_bot
+EnvironmentFile=/home/%i/crazyfrog-discordbot/.env
+
+[Unit]
+After=network.target
+Description=Crazy Frog Discord Bot (on %I)
