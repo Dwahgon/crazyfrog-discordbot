@@ -14,13 +14,13 @@ def setup(tree: discord.app_commands.CommandTree, name: str, description: str, l
         images = extra_args['images']
         texts = extra_args['texts']
 
-        img_index = random.randint(0, len(images))
+        img_index = random.randint(0, len(images)-1)
         while img_index in tabu_images:
-            img_index = random.randint(0, len(images))
+            img_index = random.randint(0, len(images)-1)
 
-        text_index = random.randint(0, len(texts))
+        text_index = random.randint(0, len(texts)-1)
         while text_index in tabu_texts:
-            text_index = random.randint(0, len(texts))
+            text_index = random.randint(0, len(texts)-1)
 
         tabu_images.append(img_index)
         if len(tabu_images) > extra_args['image tabu size']:
