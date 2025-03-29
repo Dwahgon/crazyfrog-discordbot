@@ -42,6 +42,8 @@ def main():
                 'response': command_settings['Response'] if 'Response' in command_settings else '',
                 'images': ast.literal_eval(command_settings['Images']) if 'Images' in command_settings else '',
                 'texts': ast.literal_eval(command_settings['Texts']) if 'Texts' in command_settings else '',
+                'image tabu size': int(command_settings['Image Tabu Size']) if 'Image Tabu Size' in command_settings else '',
+                'text tabu size': int(command_settings['Text Tabu Size']) if 'Text Tabu Size' in command_settings else '',
             }
         )
 

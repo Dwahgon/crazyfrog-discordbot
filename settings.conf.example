@@ -85,6 +85,8 @@ Response=Ring ding ding daa baa
 Name=imagem
 Description=Posta uma imagem do crazy frog
 Type=randomimage
+Image Tabu Size=5
+Text Tabu Size=5
 Images=[
     "path/to/image1.png",
     "path/to/image2.png",
